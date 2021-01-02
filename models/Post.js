@@ -1,4 +1,3 @@
-const { Model } = require('sequelize/types')
 const db = require('./db')
 
 const Post = db.sequelize.define('postagens', {
@@ -12,4 +11,4 @@ const Post = db.sequelize.define('postagens', {
 
 module.exports = Post
 
-//Post.sync({force: true})
+

@@ -1,10 +1,13 @@
 //mysql database connection
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('postagens', 'root', '123456789', {
+const sequelize = new Sequelize('postapp', 'root', '123456789', {
     host: "localhost",
     dialect: 'mysql'
-});
-module.exports ={
+})
+
+module.exports = {
     Sequelize: Sequelize,
     sequelize: sequelize
 }
+
+
