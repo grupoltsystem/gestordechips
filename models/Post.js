@@ -9,6 +9,7 @@ const Post = db.sequelize.define('postagens', {
     }
 })
 
+
 module.exports = Post
 
 

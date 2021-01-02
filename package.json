@@ -2,7 +2,7 @@
   "name": "gesto-de-chips",
   "version": "1.0.0",
   "description": "sistema de controle de chips M2M para empresa de rastreamento",
-  "main": "app.js",
+  "main": "idex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
