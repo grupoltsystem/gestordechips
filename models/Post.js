@@ -7,7 +7,7 @@ const Post = db.sequelize.define('postagens', {
     conteudo: {
         type: db.Sequelize.TEXT
     }
-})
+});
 
 
 module.exports = Post

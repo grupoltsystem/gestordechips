@@ -2,8 +2,8 @@
 const express = require('express');
 const app = express();
 const handlebars = require('express-handlebars');
-const bodyParser = require('body-parser')
-const Post = require('./models/Post')
+const bodyParser = require('body-parser');
+const Post = require('./models/Post');
 
 //config
     // Template Engine
@@ -11,14 +11,13 @@ const Post = require('./models/Post')
     app.set('view engine', 'handlebars')
     //body-parser
     app.use(bodyParser.urlencoded({extended: false}))
-    app.use(bodyParser.json())
+    app.use(bodyParser.json());
 //routes
 app.get('/', function(req, res){
-  Post.all().then(function(posts){
+  Post.findAll().then(function(posts){
     res.render('home', {posts: posts})
   })
 });
-
 
 app.get('/cad', function(req, res){
     res.render('formulario')
